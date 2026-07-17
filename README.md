@@ -20,6 +20,7 @@ leetcode/
 
 | # | Title | Difficulty | Topic | Solution |
 |---|-------|-----------|-------|----------|
+| 217 | Contains Duplicate | Easy | Array, Hash Set | [solution.py](arrays/217-contains-duplicate/solution.py) |
 
 
 ## Notes
