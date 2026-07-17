@@ -20,7 +20,7 @@ leetcode/
 
 | # | Title | Difficulty | Topic | Solution |
 |---|-------|-----------|-------|----------|
-| 217 | Contains Duplicate | Easy | Array, Hash Set | [solution.py](arrays/contains_duplicate.py) |
+| 217 | Contains Duplicate | Easy | Array, Hash Set | [solution.py](arrays/contain_duplicate.py) |
 | 49 | Group Anagrams | Medium | Array, Hash Map, String | [solution.py](arrays/group_anagrams) |
 
 
