@@ -20,7 +20,7 @@ leetcode/
 
 | # | Title | Difficulty | Topic | Solution |
 |---|-------|-----------|-------|----------|
-| 1 | Two Sum | Easy | Array, Hash Map | [solution.py](arrays/001-two-sum/solution.py) |
+
 
 ## Notes
 
