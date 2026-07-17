@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Java
+*.class
+*.jar
+
+# C++
+*.o
+*.out
+*.exe
+
+# OS / editor junk
+.DS_Store
+.vscode/
+.idea/

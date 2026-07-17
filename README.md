@@ -1,2 +1,27 @@
-# Starting-my-leetcode-journey-again
-I am a student from UW-Madison and I want to start the grind again on leetcode
+# LeetCode Grind
+
+My solutions to LeetCode problems, organized by topic. Written primarily in Python.
+
+## Structure
+
+Problems are organized by topic rather than by date solved, so it's easy to see coverage across concepts. Each problem lives in its own folder named `NNN-problem-slug`, matching the number LeetCode assigns it.
+
+```
+leetcode/
+├── arrays/
+├── strings/
+├── trees/
+├── linked-lists/
+├── graphs/
+└── dynamic-programming/
+```
+
+## Progress
+
+| # | Title | Difficulty | Topic | Solution |
+|---|-------|-----------|-------|----------|
+| 1 | Two Sum | Easy | Array, Hash Map | [solution.py](arrays/001-two-sum/solution.py) |
+
+## Notes
+
+Each solution file includes a comment header with the problem link, approach summary, and time/space complexity. This is as much for my own review as anything else.
