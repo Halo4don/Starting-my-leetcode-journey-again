@@ -1,0 +1,47 @@
+# LeetCode 347. Top K Frequent Elements
+# https://leetcode.com/problems/top-k-frequent-elements/
+#
+# Approach: Count frequency of each number with a dict, then sort the
+# dict items by frequency and take the top k keys.
+#
+This was my intial solution 
+
+def topKFrequent(self, nums, k):
+        num_count = {}
+        answer = []
+        for num in nums:
+            if num in num_count:
+                num_count[num] += 1
+            else:
+                num_count[num] = 1
+
+        for key, value in sorted(num_count.items(), key=lambda item:item[1]):
+            answer.append(key)
+
+        return answer[len(answer)-k : len(answer)]
+
+My thought process for this was pretty simple, make a dict that keeps count of the values it has seen. 
+
+However, the tricky part was getting a list of the keys sorted by the values. I had to search that part up.
+
+
+However, this is not the best solution. The best solution involves using bucket sort and collections.Counter.
+
+from collections import Counter
+
+def topKFrequent(self, nums, k):
+    count = Counter(nums)
+    buckets = [[] for _ in range(len(nums) + 1)]
+    
+    for num, freq in count.items():
+        buckets[freq].append(num)
+    
+    result = []
+    for freq in range(len(buckets) - 1, 0, -1):
+        for num in buckets[freq]:
+            result.append(num)
+            if len(result) == k:
+                return result
+    return result
+This changes from O(n log n) to O(n).
+
