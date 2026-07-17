@@ -4,7 +4,7 @@ My solutions to LeetCode problems, organized by topic. Written primarily in Pyth
 
 ## Structure
 
-Problems are organized by topic rather than by date solved, so it's easy to see coverage across concepts. Each problem lives in its own folder named `NNN-problem-slug`, matching the number LeetCode assigns it.
+Problems are organized by topic rather than by date solved, so it's easy to see coverage across concepts. 
 
 ```
 leetcode/
@@ -20,8 +20,8 @@ leetcode/
 
 | # | Title | Difficulty | Topic | Solution |
 |---|-------|-----------|-------|----------|
-| 217 | Contains Duplicate | Easy | Array, Hash Set | [solution.py](arrays/217-contains-duplicate/solution.py) |
-| 49 | Group Anagrams | Medium | Array, Hash Map, String | [solution.py](arrays/049-group-anagrams/solution.py) |
+| 217 | Contains Duplicate | Easy | Array, Hash Set | [solution.py](arrays/contains_duplicate.py) |
+| 49 | Group Anagrams | Medium | Array, Hash Map, String | [solution.py](arrays/group_anagrams) |
 
 
 ## Notes
