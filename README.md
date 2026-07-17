@@ -21,6 +21,7 @@ leetcode/
 | # | Title | Difficulty | Topic | Solution |
 |---|-------|-----------|-------|----------|
 | 217 | Contains Duplicate | Easy | Array, Hash Set | [solution.py](arrays/217-contains-duplicate/solution.py) |
+| 49 | Group Anagrams | Medium | Array, Hash Map, String | [solution.py](arrays/049-group-anagrams/solution.py) |
 
 
 ## Notes
