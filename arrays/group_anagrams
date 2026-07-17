@@ -1,0 +1,31 @@
+# LeetCode 49. Group Anagrams
+# https://leetcode.com/problems/group-anagrams/
+#
+# Approach: Anagrams share the same letters, so sorting each word's letters
+# gives a canonical key that all anagrams of that word will share. Group
+# words into a dict keyed by their sorted form.
+
+This was my initial solution.
+
+def groupAnagrams(self, strs):
+        answer = {}
+        for word in strs:
+            sorted_word = ''.join(sorted(word))
+
+            if sorted_word in answer:
+                answer[sorted_word].append(word)
+            else:
+                answer[sorted_word] = [word]
+
+        return answer.values()
+
+My thought process for this was I first thought what is an anagram. An anagram is a where multiple words can be made from one set of letters. So my 2nd thought was to sort each word alphabetically. 
+Then my next thought was what should I be using as the key for this problem. It took me a little bit to realize it should be that sorted word as all anagram would have that same sort.
+
+
+However, to come to this very solution, I had to look up how to sort a word alphabetically.
+
+Furthermore, a detail that I missed was that I was suppose to give the answer as a list not a dict_values object so I should have added a list(...) in my return value.
+
+
+
