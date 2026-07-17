@@ -1,3 +1,11 @@
+# LeetCode 217. Contains Duplicate
+# https://leetcode.com/problems/contains-duplicate/
+#
+# Approach: Use a set to track numbers seen so far. If a number is already
+# in the set, we've found a duplicate. A set is used instead of a dict since
+# we only need membership checking, not key-value pairs.
+
+
 My intial soluton was 
 
 def containsDuplicate(self, nums):
