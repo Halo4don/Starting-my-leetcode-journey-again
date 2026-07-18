@@ -1,3 +1,14 @@
+# LeetCode 11. Container With Most Water
+# https://leetcode.com/problems/container-with-most-water/
+#
+# Approach: Two-pointer technique starting from both ends. At each step,
+# calculate area using the shorter height (since that's the limiting side),
+# track the max, then move the pointer at the shorter height inward, since
+# moving the taller one can only shrink the width without any chance of
+# increasing the limiting height. If heights are equal, moving either
+# pointer works, the area is bound by that height regardless.
+#
+
 This is my intial solution
 
 def maxArea(self, height):
